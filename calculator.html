@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Savings Calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">PROFILE</a>
+    <a href="calculator.html">SAVING CALCULATOR</a>
+  </nav>
+
+  <main>
+    <div class="outerCalculator">   
+      <div class="calculator">
+      <h2>Savings Calculator</h2>
+      <form id="calculatorForm">
+
+        <table>
+          <tr>
+            <td><label for="fullName">Full Name</label></td>
+            <td><input type="text" id="fullName" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="number" id="age" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="income">Income (Monthly) RM</label></td>
+            <td><input type="number" id="income" required></td>
+          </tr>
+       
+          <tr>
+            <td><label for="monthlySaving">Monthly Saving RM</label></td>
+            <td><input type="number" id="monthlySaving" required></td>
+          </tr>
+        
+          <tr>
+            <td><label for="yearStartSaving">Year Start Saving</label></td>
+            <td><input type="number" id="yearStartSaving" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="totalYears">Total Years of Saving</label></td>
+            <td><input type="number" id="totalYears" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="dividendRate">Dividend Rate (%)</label></td>
+            <td><input type="number" id="dividendRate" required></td>
+          </tr>
+
+          <tr>
+            <td><label for="targetTotalSaving">Target Total Saving</label></td>
+            <td> <input type="number" id="targetTotalSaving" required></td>
+          </tr>
+
+      </table>
+        <button type="submit">Calculate</button>
+      </form>
+
+      
+    </div>
+    <div id="result"></div>
+  </div>
+ 
+  </main>
+
+  <footer>
+    <p>&copy; HARIZ YOB 5B 202278401</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>
+

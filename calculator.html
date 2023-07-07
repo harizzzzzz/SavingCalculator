@@ -2,72 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Savings Calculator</title>
+  <title>Tabung Kahwin Marhaein Calculator</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <nav class="navbar">
     <a href="index.html">PROFILE</a>
-    <a href="calculator.html">SAVING CALCULATOR</a>
+    <a href="calculator.html">CALCULATOR</a>
   </nav>
 
   <main>
-    <div class="outerCalculator">   
+    <div class="outerCalculator">
       <div class="calculator">
-      <h2>Savings Calculator</h2>
-      <form id="calculatorForm">
+        <h2>Tabung Kahwin Marhaein Calculator</h2>
+        <form id="calculatorForm">
 
-        <table>
-          <tr>
-            <td><label for="fullName">Full Name</label></td>
-            <td><input type="text" id="fullName" required></td>
-          </tr>
+          <table>
+            <tr>
+              <td><label for="fullName">Full Name</label></td>
+              <td><input type="text" id="fullName" style="width: 100%;" required></td>
+            </tr>
 
-          <tr>
-            <td><label for="age">Age</label></td>
-            <td><input type="number" id="age" required></td>
-          </tr>
+            <tr>
+              <td><label for="age">Age</label></td>
+              <td>
+                <select id="age" style="width: 100%;" required>
+                  <option value="">Select Age</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
 
-          <tr>
-            <td><label for="income">Income (Monthly) RM</label></td>
-            <td><input type="number" id="income" required></td>
-          </tr>
-       
-          <tr>
-            <td><label for="monthlySaving">Monthly Saving RM</label></td>
-            <td><input type="number" id="monthlySaving" required></td>
-          </tr>
-        
-          <tr>
-            <td><label for="yearStartSaving">Year Start Saving</label></td>
-            <td><input type="number" id="yearStartSaving" required></td>
-          </tr>
+                </select>
+              </td>
+            </tr>
 
-          <tr>
-            <td><label for="totalYears">Total Years of Saving</label></td>
-            <td><input type="number" id="totalYears" required></td>
-          </tr>
+            <tr>
+              <td><label for="income">Income (Monthly) RM</label></td>
+              <td><input type="number" id="income" min="1000" max="10001" style="width: 100%;" required></td>
+            </tr>
 
-          <tr>
-            <td><label for="dividendRate">Dividend Rate (%)</label></td>
-            <td><input type="number" id="dividendRate" required></td>
-          </tr>
+            <tr>
+              <td><label for="monthlySaving">Monthly Saving RM</label></td>
+              <td>    
+                <select id="monthlySaving" style="width: 100%;" required>
+                <option value="">Select Monthly Saving</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="600">600</option>
+                <option value="700">700</option>
+                <option value="800">800</option>
+                <option value="900">900</option>
+                <option value="1000">1000</option>
+              </select>
+              </td>
+            </tr>
 
-          <tr>
-            <td><label for="targetTotalSaving">Target Total Saving</label></td>
-            <td> <input type="number" id="targetTotalSaving" required></td>
-          </tr>
+            <tr>
+              <td><label for="yearStartSaving">Year Start Saving</label></td>
+              <td>
+                <select id="yearStartSaving" style="width: 100%;" required>
+                  <option value="">Select Year</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                </select>
+              </td>
+            </tr>
 
-      </table>
-        <button type="submit">Calculate</button>
-      </form>
+            <tr>
+              <td><label for="totalYears">Total Years of Saving</label></td>
+              <td>    
+                <select id="totalYears" style="width: 100%;" required>
+                <option value="">Select Total Years of Saving</option>
+                <option value="1">1 year</option>
+                <option value="2">2 year</option>
+                <option value="3">3 year</option>
+                <option value="4">4 year</option>
+                <option value="5">5 year</option>
+              </select>
+              </td>
+            </tr>
 
-      
+            <tr>
+              <td><label for="dividendRate">Dividend Rate</label></td>
+              <td style="text-align: left !important;">
+                <input type="radio" id="dividendRate1" name="dividendRate" value="3" required>
+                <label for="dividendRate1">Tabung Haji - 3%</label><br>
+                <input type="radio" id="dividendRate2" name="dividendRate" value="5" required>
+                <label for="dividendRate2">ASB - 5%</label><br>
+                <input type="radio" id="dividendRate3" name="dividendRate" value="10" required>
+                <label for="dividendRate3">Emas - 10%</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="targetTotalSaving">Target Total Saving</label></td>
+              <td> <input type="number" id="targetTotalSaving" min="1000" max="50000" style="width: 100%;" placeholder="More 1000 Less 50000 " required></td>
+            </tr>
+
+          </table>
+          <button type="submit">Calculate</button>
+        </form>
+
+
+      </div>
+      <div id="result"></div>
     </div>
-    <div id="result"></div>
-  </div>
- 
+
   </main>
 
   <footer>
@@ -79,4 +136,3 @@
 
 </body>
 </html>
-
